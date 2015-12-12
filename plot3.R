@@ -10,7 +10,7 @@ reduced$Date <- as.Date(reduced$Date, format="%d/%m/%Y")
 reduced$DateTime <- as.POSIXct(paste(as.Date(reduced$Date), reduced$Time))
 
 ## plot time
-with(reduced,  {plot(Sub_metering_1 ~ DateTime, xlab="", ylab="Global Active Power (kilowatts)", type="l")
+with(reduced,  {plot(Sub_metering_1 ~ DateTime, xlab="", ylab="Energy sub metering", type="l")
                 lines(Sub_metering_2 ~ DateTime, col = 'Red')
                 lines(Sub_metering_3 ~ DateTime, col = 'Blue')
 })
